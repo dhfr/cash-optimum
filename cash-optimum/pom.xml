@@ -20,7 +20,12 @@
             <artifactId>dhfr-web-core</artifactId>
             <version>1.0.0.RELEASE</version>
         </dependency>
-         <dependency>
+        <dependency>
+            <groupId>com.dhfr</groupId>
+            <artifactId>dhfr-data-core</artifactId>
+            <version>1.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>com.dhfr</groupId>
             <artifactId>spark-theme</artifactId>
             <version>1.0.0.RELEASE</version>

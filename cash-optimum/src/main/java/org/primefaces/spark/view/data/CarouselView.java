@@ -18,13 +18,13 @@ package org.primefaces.spark.view.data;
 import java.io.Serializable;
 import java.util.List;
 import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
-import javax.inject.Named;
-import org.omnifaces.cdi.ViewScoped;
 import org.primefaces.spark.domain.Car;
 import org.primefaces.spark.service.CarService;
 
-@Named(value = "carouselView")
+@ManagedBean(name = "carouselView")
 @ViewScoped
 public class CarouselView implements Serializable {
 
