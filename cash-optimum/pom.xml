@@ -36,6 +36,11 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>  
+            <groupId>com.dhfr</groupId>
+            <artifactId>dhfr-security-core</artifactId>
+            <version>1.0.0.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>

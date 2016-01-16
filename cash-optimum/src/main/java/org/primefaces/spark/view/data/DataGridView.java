@@ -27,26 +27,27 @@ import org.primefaces.spark.service.CarService;
 @ManagedBean
 @ViewScoped
 public class DataGridView implements Serializable {
-    
+
     private List<Car> cars;
-    
     private Car selectedCar;
     
-    @ManagedProperty("#{carService}")
-    private CarService service;
-    
+    @ManagedProperty(value = "#{carService}")
+    private CarService carService;
+
     @PostConstruct
     public void init() {
-        cars = service.createCars(45);
+        cars = carService.createCars(45);
     }
 
     public List<Car> getCars() {
         return cars;
     }
 
-    public void setService(CarService service) {
-        this.service = service;
+    public void setCarService(CarService carService) {
+        this.carService = carService;
     }
+
+  
 
     public Car getSelectedCar() {
         return selectedCar;
@@ -55,4 +56,5 @@ public class DataGridView implements Serializable {
     public void setSelectedCar(Car selectedCar) {
         this.selectedCar = selectedCar;
     }
+
 }

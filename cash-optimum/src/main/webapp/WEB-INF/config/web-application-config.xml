@@ -10,8 +10,9 @@
     <context:property-placeholder location="classpath*:application.properties" />
     <import resource="common-config.xml"/>
     <import resource="data-access-config_tomcat.xml"/>
-
-
+    <import resource="webmvc-config.xml" />
+   <import resource="webflow-config.xml" />
+   <import resource="security-config.xml"/>
 <!--   data-access-config_jboss_nonXA.xml  data-access-config_tomcat.xml  
     <import resource="email-sender-config.xml"/>
     <import resource="webcore-config.xml"/>
