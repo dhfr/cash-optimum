@@ -12,7 +12,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
             <meta name="apple-mobile-web-app-capable" content="yes" />
         </f:facet>
-        <title>PrimeFaces Spark</title>
+        <title>Cash Optimum | Emerio Indonesia</title>
         <h:outputScript name="js/layout.js" library="spark-layout" />
 
         <h:outputText value="&lt;!--[if gte IE 9]&gt;" escape="false" />
@@ -28,47 +28,40 @@
 
         <div id="layout-portlets-cover">
             <div class="other-pages-box Container50 Responsive50 MarAuto Fnone TexAlCenter ShadowGray MarTop10"
-                 style="margin-top:10%; background-image:url(#{resource['spark-layout:images/loginpageillust.svg']}); background-repeat:no-repeat; background-position:center; background-size:cover;">
+                 style="margin-top:12%; background-image:url(#{resource['spark-layout:images/loginpageillust.svg']}); background-repeat:no-repeat; background-position:center; background-size:cover;">
                 <div class="Container90 Fnone MarAuto TexAlCenter">
-                    <div class="EmptyBox10"></div>
-                    <h:graphicImage name="images/LOGO.svg" library="spark-layout" styleClass="MarAuto MarTop20 MarBot10"/>
-                    <div class="EmptyBox20"></div>
-                     <!--<div class="Seperator"></div>-->
-                    <h:panelGrid columns="3" width="100%" style="text-align: left;margin-left: 5px">
-                        <p:outputLabel value="User Name"  styleClass="FontBold Fs18 green"/>
-                        <p:outputLabel value=":" styleClass="FontBold Fs18 green"/>
-                        <p:inputText value="" placeholder="User Name or Email" styleClass="Container90 Fnone MarAuto Fs16"/>
-                        <p:outputLabel value="Password" styleClass="FontBold Fs18 green" />
-                        <p:outputLabel value=":" styleClass="FontBold Fs18 green"/>
-                        <p:password value="" placeholder="Your Password" styleClass="Container90 Fnone MarAuto Fs16" feedback="false"/>
-                        <p:outputLabel/>
-                        <p:outputLabel/>
-                        <p:selectBooleanCheckbox value="accept" itemLabel="Remember Me" style="margin-top: 7px; color: #003366" />
-                        <p:outputLabel/>
-                        <p:outputLabel/>
-                        <p:commandButton value="Log In"  style="margin-top: 10px;width: 120px" styleClass="Fs16"/>
+                    <div class="EmptyBox70"></div>
+                    <h:panelGrid columns="2" width="100%">
+                        <h:panelGroup>
+                            <h:panelGrid >
+                                <p:graphicImage name="emoney.png" library="images" styleClass="MarAuto" cache="true" />
+                                <p:outputLabel value="CASH OPTIMUM" styleClass="FontBold Fs17 greenSoft"  />
+                            </h:panelGrid>
+                        </h:panelGroup>     
+
+                        <h:panelGrid columns="3" width="100%" style="text-align: left;margin-left: 5px;float: right" >
+                            <p:outputLabel value="User Name"  styleClass="FontBold Fs16 greenSoft" />
+                            <p:outputLabel value=":" styleClass="FontBold Fs16 greenSoft"/>
+                            <p:inputText value="" placeholder="User Name or Email" styleClass="Container90 Fnone MarAuto Fs14"/>
+                            <p:outputLabel value="Password" styleClass="FontBold Fs16 greenSoft" />
+                            <p:outputLabel value=":" styleClass="FontBold Fs16 greenSoft"/>
+                            <p:password value="" placeholder="Your Password" styleClass="Container90 Fnone MarAuto Fs14" feedback="false"/>
+                            <p:outputLabel/>
+                            <p:outputLabel/>
+                            <p:selectBooleanCheckbox value="accept" itemLabel="Remember Me" style="margin-top: 7px; color: #003366;font-size: 14px !important" />
+                            <p:outputLabel/>
+                            <p:outputLabel/>
+                            <p:commandButton value="Log In"  style="margin-top: 10px;width: 120px" styleClass="Fs14 "/>
+                        </h:panelGrid>
                     </h:panelGrid>
-                    <!--                    <p:outputLabel value="User Name" />
-                                        <p:outputLabel value=":" />
-                                        <p:inputText value="" placeholder="Username" styleClass="Container80 Fnone MarAuto Fs18"/>
-                                        <div class="EmptyBox10"></div>
-                                        <p:outputLabel value="Password" />
-                                        <p:outputLabel value=":" />
-                                        <p:password value="" placeholder="Password" styleClass="Container80 Fnone MarAuto Fs18" feedback="false"/>-->
-                    <div class="EmptyBox20"></div>
-                    <!--                    <div class="Container90 Fnone MarAuto softgray">
-                                            <div class="EmptyBox5"></div>
-                                            <h:panelGrid columns="3" width="100%" style="text-align: left;margin-left: 5px">
-                                                <p:outputLabel value="" />
-                                                <p:outputLabel value="" />
-                                                <p:selectBooleanCheckbox value="accept" itemLabel="I Accept Terms And Policies"/>
-                                            </h:panelGrid>
-                                        </div>-->
+
+                    <!--<div class="EmptyBox10"></div>-->
+
+                    <div class="EmptyBox30"></div>
                     <div class="Seperator"></div>
-                    <!--<div class="EmptyBox30"></div>-->
                     <div align="center">
-                        <p:outputLabel value="PT. Emerio Indonesia" styleClass="Fs12" style="float: left"/>  
-                        <p:outputLabel value="Copyright © 2016. All Rights Reserved " styleClass="Fs12" style="float: right"/>  
+                        <p:outputLabel value="PT. Emerio Indonesia" styleClass="Fs11 black" style="float: left"/>  
+                        <p:outputLabel value="Copyright © 2016. All Rights Reserved " styleClass="Fs11 black" style="float: right"/>  
                     </div>
                     <div class="EmptyBox10"></div>
                 </div>
@@ -78,7 +71,8 @@
         <h:outputStylesheet name="css/core-layout.css" library="spark-layout" />
         <h:outputStylesheet name="css/font-awesome.css" library="spark-layout" />
         <h:outputStylesheet name="css/animate.css" library="spark-layout" />
-        <h:outputStylesheet name="css/spark-layout.css" library="spark-layout" />
+        <!--<h:outputStylesheet name="css/spark-layout.css" library="spark-layout" />-->
+         <h:outputStylesheet name="css/spark-layout#{themeView.color}.css" library="spark-layout" />
     </h:body>
 
 </html>
